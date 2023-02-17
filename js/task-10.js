@@ -14,6 +14,7 @@ function getInputValue(event) {
     amount = event.target.value;
 }
 function addBoxes() {
+    boxesEl.innerHTML = "";
     boxesEl.insertAdjacentHTML("beforeend", createBoxes(amount));
 }
 
