@@ -3,8 +3,8 @@ const inputEl = document.querySelector("#validation-input");
 inputEl.addEventListener("blur", onBlurCheck);
 
 function onBlurCheck(event) {
-    return event.currentTarget.value.length >=
-        event.currentTarget.dataset.length
+    return event.currentTarget.value.length ===
+        Number(event.currentTarget.dataset.length)
         ? setValidClass()
         : setInvalidClass();
 }
